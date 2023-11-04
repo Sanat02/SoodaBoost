@@ -52,6 +52,7 @@ public class SecurityConfig {
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/complain/{questionId}")).hasAuthority("USER")
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/companies/{companyId}")).authenticated()
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/companies/click/{companyId}")).hasAuthority("USER")
+                        .requestMatchers(AntPathRequestMatcher.antMatcher("/info/{userId}")).authenticated()
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/profile")).authenticated()
                         .anyRequest().permitAll()
 

@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Forum</title>
+    <title>Test</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-
+    <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
 
-
+    <!-- Vendor CSS Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 
     <style>
@@ -59,10 +58,6 @@
             #main {
                 padding: 20px;
             }
-        }
-
-        .pagetitle {
-            margin-bottom: 10px;
         }
 
         .pagetitle h1 {
@@ -130,30 +125,20 @@
         }
 
 
-        .card {
-            margin-bottom: 30px;
-            border: none;
-            border-radius: 5px;
-            box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-        }
-
-
-        .card-title {
-            padding: 20px 0 15px 0;
-            font-size: 18px;
-            font-weight: 500;
-            color: #012970;
-            font-family: "Poppins", sans-serif;
-        }
-
         .card-title span {
             color: #899bbd;
             font-size: 14px;
             font-weight: 400;
         }
 
-        .card-body {
-            padding: 0 20px 20px 20px;
+
+        .breadcrumb a {
+            color: #899bbd;
+            transition: 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            color: #51678f;
         }
 
 
@@ -207,6 +192,41 @@
         }
 
 
+        @media (max-width: 1199px) {
+
+
+        }
+
+        .header .search-form input {
+            border: 0;
+            font-size: 14px;
+            color: #012970;
+            border: 1px solid rgba(1, 41, 112, 0.2);
+            padding: 7px 38px 7px 8px;
+            border-radius: 3px;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .header .search-form input:focus,
+        .header .search-form input:hover {
+            outline: none;
+            box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
+            border: 1px solid rgba(1, 41, 112, 0.3);
+        }
+
+        .header .search-form button {
+            border: 0;
+            padding: 0;
+            margin-left: -30px;
+            background: none;
+        }
+
+        .header .search-form button i {
+            color: #012970;
+        }
+
+
         .header-nav ul {
             list-style: none;
         }
@@ -229,7 +249,6 @@
             font-size: 14px;
             font-weight: 600;
         }
-
 
         .header-nav .notifications .notification-item i {
             margin: 0 20px 0 10px;
@@ -283,17 +302,13 @@
             font-size: 14px;
         }
 
-        .header-nav .profile .dropdown-item {
-            font-size: 14px;
-            padding: 10px 15px;
-            transition: 0.3s;
-        }
 
         .header-nav .profile .dropdown-item i {
             margin-right: 10px;
             font-size: 18px;
             line-height: 0;
         }
+
 
         .sidebar {
             position: fixed;
@@ -410,7 +425,6 @@
             color: #4154f1;
         }
 
-
         .sidebar-nav .nav-content a {
             display: flex;
             align-items: center;
@@ -434,6 +448,87 @@
 
         .sidebar-nav .nav-content a.active i {
             background-color: #4154f1;
+        }
+
+        .dashboard .filter .dropdown-header h6 {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #aab7cf;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+
+        .dashboard .info-card h6 {
+            font-size: 28px;
+            color: #012970;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .dashboard .news img {
+            width: 80px;
+            float: left;
+            border-radius: 5px;
+        }
+
+        .dashboard .news h4 {
+            font-size: 15px;
+            margin-left: 95px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .dashboard .news h4 a {
+            color: #012970;
+            transition: 0.3s;
+        }
+
+        .dashboard .news h4 a:hover {
+            color: #4154f1;
+        }
+
+        .dashboard .news p {
+            font-size: 14px;
+            color: #777777;
+            margin-left: 95px;
+        }
+
+
+        .dashboard .recent-sales .table thead {
+            background: #f6f6fe;
+        }
+
+        .dashboard .recent-sales .table thead th {
+            border: 0;
+        }
+
+
+        .dashboard .top-selling .table thead {
+            background: #f6f6fe;
+        }
+
+        .dashboard .top-selling .table thead th {
+            border: 0;
+        }
+
+        .dashboard .top-selling .table tbody td {
+            vertical-align: middle;
+        }
+
+        .dashboard .top-selling img {
+            border-radius: 5px;
+            max-width: 60px;
+        }
+
+
+        .iconslist i {
+            margin: 0.25rem;
+            font-size: 2.5rem;
         }
 
 
@@ -466,11 +561,6 @@
         }
 
 
-        .profile .profile-overview .card-title {
-            color: #012970;
-        }
-
-
         .profile .profile-edit label {
             font-weight: 600;
             color: rgba(1, 41, 112, 0.6);
@@ -478,6 +568,73 @@
 
         .profile .profile-edit img {
             max-width: 120px;
+        }
+
+
+        .faq .basic h6 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #4154f1;
+        }
+
+        .faq .basic p {
+            color: #6980aa;
+        }
+
+
+        .contact .info-box i {
+            font-size: 38px;
+            line-height: 0;
+            color: #4154f1;
+        }
+
+        .contact .info-box h3 {
+            font-size: 20px;
+            color: #012970;
+            font-weight: 700;
+            margin: 20px 0 10px 0;
+        }
+
+        .contact .info-box p {
+            padding: 0;
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+
+        .contact .php-email-form input,
+        .contact .php-email-form textarea {
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+            border-radius: 0;
+        }
+
+        .contact .php-email-form input:focus,
+        .contact .php-email-form textarea:focus {
+            border-color: #4154f1;
+        }
+
+        .contact .php-email-form input {
+            padding: 10px 15px;
+        }
+
+        .contact .php-email-form textarea {
+            padding: 12px 15px;
+        }
+
+        .contact .php-email-form button[type=submit] {
+            background: #4154f1;
+            border: 0;
+            padding: 10px 30px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 4px;
+        }
+
+        .contact .php-email-form button[type=submit]:hover {
+            background: #5969f3;
         }
 
         @keyframes animate-loading {
@@ -490,78 +647,125 @@
             }
         }
 
-        #notification {
-            position: fixed;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #4CAF50; /* Green background color */
-            color: white; /* White text color */
-            padding: 16px;
-            border-radius: 5px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: 0.5s;
+        .error-404 h1 {
+            font-size: 180px;
+            font-weight: 700;
+            color: #4154f1;
+            margin-bottom: 0;
+            line-height: 150px;
         }
 
-        #notification.success {
-            background-color: #4CAF50;
+        .error-404 h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #012970;
+            margin-bottom: 30px;
         }
 
-        .ratings i {
-            color: green;
+
+        @media (min-width: 992px) {
+            .error-404 img {
+                max-width: 50%;
+            }
         }
 
-        .install span {
-            font-size: 12px;
-        }
+        .card {
+            border: none;
 
-        .col-md-4 {
-            margin-top: 27px;
-        }
-
-        .modal-content {
-            background-color: #fff;
-            border: 2px solid #3498db;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .modal-title {
-            color: #3498db;
-        }
-
-        .btn-secondary {
-            background-color: #ccc;
-        }
-
-        .btn-secondary:hover {
-            background-color: #999;
-        }
-
-        .btn-primary {
-            background-color: #3498db;
-        }
-
-        .btn-primary:hover {
-            background-color: #1f78a7;
-        }
-
-        .custom-button {
-            background-color: white; /* Button background color */
-            border-radius: 5px; /* Add rounded corners */
-            padding: 5px 10px; /* Add some padding */
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
             cursor: pointer;
-            border-color: #717ff5;
-
         }
 
-        .custom-button:hover {
-            background-color: #ece6e6 /* Button background color on hover */
+        .card:before {
+
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #5767ec;
+            transform: scaleY(1);
+            transition: all 0.5s;
+            transform-origin: bottom
         }
+
+        .card:after {
+
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #4154f1;
+            transform: scaleY(0);
+            transition: all 0.5s;
+            transform-origin: bottom
+        }
+
+        .card:hover::after {
+            transform: scaleY(1);
+        }
+
+
+        .fonts {
+            font-size: 11px;
+        }
+
+        .social-list {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .social-list li {
+            padding: 10px;
+            color: #4154f1;
+            font-size: 19px;
+        }
+
+
+        .buttons button:nth-child(1) {
+            border: 1px solid #4154f1 !important;
+            color: #4154f1;
+            height: 40px;
+        }
+
+        .buttons button:nth-child(1):hover {
+            border: 1px solid #4154f1 !important;
+            color: #fff;
+            height: 40px;
+            background-color: #4154f1;
+        }
+
+        .buttons button:nth-child(2) {
+            border: 1px solid #4154f1 !important;
+            background-color: #4154f1;
+            color: #fff;
+            height: 40px;
+        }
+        .contact-heading {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+
 
 
     </style>
+
+
 </head>
 
 <body>
@@ -571,7 +775,6 @@
 
     <div class="d-flex align-items-center justify-content-between">
         <a href="index.ftlh" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="">
             <span class="d-none d-lg-block">SoodaBoost</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -580,28 +783,27 @@
 
     <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown pe-3">
 
-            <#if user??>
-                <li class="nav-item dropdown pe-3">
-                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <i class="fa fa-user fa-1x"></i>
-                        <span class="d-none d-md-block dropdown-toggle ps-2">${user.email}</span>
-                    </a>
-                </li>
-                <li style="margin-right: 6px;margin-left: 6px;">
-                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/logout">
-                        <i class="bi bi-box-arrow-right"></i>
-                        <span>Чыгуу</span>
-                    </a>
-                </li>
-                <li style="margin-right: 6px;margin-left: 6px;">
-                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/forum/history">
-                        <i class="bi bi-box-arrow-right"></i>
-                        <span>Окуялар</span>
-                    </a>
-                </li>
-            </#if>
-
+            <li class="nav-item dropdown pe-3">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                    <i class="fa fa-user fa-1x"></i>
+                    <span class="d-none d-md-block dropdown-toggle ps-2">${user.email}</span>
+                </a>
+            </li>
+            <li style="margin-right: 6px;margin-left: 6px;">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Чыгуу</span>
+                </a>
+            </li>
+            <li style="margin-right: 6px;margin-left: 6px;">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/forum/history">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Окуялар</span>
+                </a>
+            </li>
+            </li>
         </ul>
     </nav>
 
@@ -610,14 +812,12 @@
 <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
-
         <li class="nav-item">
             <a class="nav-link " href="/">
                 <i class="bi bi-grid"></i>
                 <span>Башкы бет</span>
             </a>
         </li>
-
 
         <li class="nav-heading">Беттер</li>
 
@@ -634,19 +834,21 @@
                 <span>Окутуулар</span>
             </a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link collapsed" href="/#">
+            <a class="nav-link collapsed" href="/forum">
                 <i class="bi bi-bank"></i>
                 <span>Форум</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="/test">
+            <a class="nav-link collapsed" href="#">
                 <i class="bi bi-calculator"></i>
                 <span>Тест</span>
             </a>
         </li>
+
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="/consultation">
@@ -676,246 +878,64 @@
                 <span>Кирүү</span>
             </a>
         </li>
+
+
     </ul>
+
 </aside>
+
 <main id="main" class="main">
+    <div class="container mt-5">
 
-    <div class="pagetitle">
-        <h1>Жооптор</h1>
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.ftlh">Башкы бет</a></li>
-            </ol>
-        </nav>
-    </div>
+        <div class="row d-flex justify-content-center">
 
-    <div class="row">
+            <div class="col-md-7">
 
-        <div class="col-md-4">
-            <div class="card p-3" style="margin-left: 40px; width: 400px">
+                <div class="card p-3 py-4">
 
-                <div class="d-flex flex-row mb-3">
-                    <img src="https://i.imgur.com/ccMhxvC.png" width="90" style="margin-right: 20px">
-
-                    <div style="height: 80px;margin-top: 30px" class="d-flex flex-column ml-2"><span>Суроо </span><span
-                                class="text-black-50"><a href="/info/${question.userId}"
-                                                         style="text-decoration: none;color: #2c384e"> ${question.userName}</a></span><span
-                                class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                    class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                    <div class="text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png" width="100" class="rounded-circle">
                     </div>
 
-                    <div class="container mt-5" style="margin-left: 30px; margin-bottom:50px;">
-                        <button class="custom-button">
-                            <span class="word-click"
-                                  style="text-decoration: none; cursor: pointer; color: #717ff5;">Арыз</span>
-                        </button>
-                    </div>
+                    <div class="text-center mt-3">
+                        <h5 class="mt-2 mb-0">${searchedUser.fio}</h5>
 
-                    <!-- Bootstrap Modal -->
-                    <div class="modal" id="notificationModal" tabindex="-1" role="dialog"
-                         aria-labelledby="notificationModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="notificationModalLabel">Арыздануу</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    Окуяга чын эле арызданасызбы?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" style="background-color: red" class="btn btn-secondary"
-                                            data-dismiss="modal">Жок
-                                    </button>
-                                    <a href="/complain/${question.id}">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Ооба</button>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="px-4 mt-1">
+                            <p class="fonts contact-info"><i class="fas fa-envelope"></i>  ${searchedUser.email}</p>
+                            <p class="fonts contact-info"><i class="fas fa-phone"></i>  ${searchedUser.phoneNumber}</p>
                         </div>
+
+                        <ul class="social-list">
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-dribbble"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                            <li><i class="fa fa-linkedin"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                        </ul>
+
+                        <div class="buttons">
+                            <button class="btn btn-outline-primary px-4">Окуялар</button>
+                        </div>
+
+
                     </div>
 
 
                 </div>
-                <h6>${question.question}</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>${question.questionDate}</span><span
-                            class="text-primary"><i
-                                class="fa fa-angle-right"></i></span></div>
+
             </div>
+
         </div>
-    </div>
 
     </div>
-
-    <div class="container mt-4" id="question-container">
-
-    </div>
-
-
-    <div class="container mt-4">
-        <div class="card mb-4">
-            <div class="card-header">
-                Жооп бер
-            </div>
-
-            <div class="card-body" style="margin-top: 4px">
-
-                <form id="chat_form">
-                    <#if _csrf??>
-                        <input type="hidden" name="${(_csrf.parameterName)!'csrf-param-name'}"
-                               value="${(_csrf.token)!'csrf-token'}"/>
-
-                    </#if>
-                    <meta name="_csrf_header" content="${_csrf.headerName}"/>
-                    <meta name="_csrf_token" content="${_csrf.token}"/>
-                    <div class="form-group" style="margin-bottom: 5px">
-                        <textarea class="form-control" id="question" rows="3"
-                                  placeholder="Type your question here"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Жөнөтүү</button>
-                </form>
-
-            </div>
-        </div>
-    </div>
-
 </main>
 
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const messageForm = document.querySelector('#chat_form');
-        const baseUrl = 'http://localhost:8089/forum/answer/' + ${question.id};
-        const csrfHeader = document.querySelector('meta[name="_csrf_header"]').getAttribute('content');
-        const csrfToken = document.querySelector('meta[name="_csrf_token"]').getAttribute('content');
-
-        async function reviewHandler(e) {
-            e.preventDefault();
-
-            const questionInput = document.getElementById('question');
-            const question = questionInput.value.trim();
-
-            if (question === '') {
-                return;
-            }
-
-            try {
-                const response = await fetch(baseUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        [csrfHeader]: csrfToken
-                    },
-                    body: JSON.stringify(question),
-                });
-                if (response.ok) {
-                    questionInput.value = '';
-
-                    const notification = document.createElement('div');
-                    notification.id = 'notification';
-                    notification.className = 'alert alert-success mt-3';
-                    notification.innerHTML = 'Жооп ийгиликтүү жөнөтүлдү!';
-                    notification.classList.add('success');
-                    document.body.appendChild(notification);
-
-
-                    setTimeout(() => {
-                        notification.remove();
-                    }, 5000);
-                } else {
-                    console.error('Error:', response.statusText);
-                }
-
-            } catch (error) {
-                console.error('Error:', error);
-            }
-
-
-        }
-
-        messageForm.addEventListener('submit', reviewHandler);
-
-
-        function createQuestionCard(question) {
-            const card = document.createElement('div');
-            card.className = 'card mb-3';
-
-            const cardHeader = document.createElement('div');
-            cardHeader.className = 'card-header';
-            cardHeader.textContent = question.userName;
-            card.appendChild(cardHeader);
-
-            const cardBody = document.createElement('div');
-            cardBody.className = 'card-body';
-
-
-            const cardText = document.createElement('p');
-            cardText.className = 'card-text';
-            cardText.textContent = question.answer;
-            cardBody.appendChild(cardText);
-
-            const cardDate = document.createElement('p');
-            cardDate.className = 'card-text';
-            cardDate.textContent = 'Дата:' + question.answerDate
-            cardBody.appendChild(cardDate);
-
-
-            card.appendChild(cardBody);
-
-            return card;
-        }
-
-
-        async function displayQuestions() {
-            const questionContainer = document.getElementById('question-container');
-            try {
-                const response = await fetch('http://localhost:8089/forum/answer1/' + ${question.id});
-                const questions = await response.json();
-
-                questionContainer.innerHTML = '';
-                questions.forEach(question => {
-                    const card = createQuestionCard(question);
-                    questionContainer.appendChild(card);
-                });
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', displayQuestions);
-
-        setInterval(displayQuestions, 3000);
-
-        $(document).ready(function () {
-            $('.word-click').click(function () {
-                $('#notificationModal').modal('show');
-            });
-
-            $('#notificationModal .close').click(function () {
-                $('#notificationModal').modal('hide');
-            });
-
-            // Close the modal when the "Cancel" button is clicked
-            $('#notificationModal .btn-secondary').click(function () {
-                $('#notificationModal').modal('hide');
-            });
-
-        });
-
-
-    });
-</script>
-
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

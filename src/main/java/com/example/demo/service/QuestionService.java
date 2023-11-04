@@ -67,6 +67,7 @@ public class QuestionService {
                 .questionDate(question.getQuestionDate())
                 .userName(question.getUser().getFio())
                 .question(question.getQuestion())
+                .userId(question.getUser().getId())
                 .build();
     }
 

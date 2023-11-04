@@ -857,7 +857,7 @@
                     <ul class="list-group">
                         <#list approves as approve>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                ${approve.userName}
+                               <a href="/info/${approve.userId}"> ${approve.userName}</a>
                             </li>
                         </#list>
                     </ul>
