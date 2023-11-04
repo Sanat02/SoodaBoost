@@ -6,11 +6,11 @@
     <title>Dashboard - NiceAdmin Bootstrap Template</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <!-- Google Fonts -->
+
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
-    <!-- Vendor CSS Files -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.5.0/css/bootstrap.min.css" rel="stylesheet">
@@ -44,9 +44,7 @@
             font-family: "Nunito", sans-serif;
         }
 
-        /*--------------------------------------------------------------
-        # Main
-        --------------------------------------------------------------*/
+
         #main {
             margin-top: 60px;
             padding: 20px 30px;
@@ -111,7 +109,6 @@
         }
 
 
-        /* Card */
         .card {
             margin-bottom: 30px;
             border: none;
@@ -592,9 +589,6 @@
             max-width: 120px;
         }
 
-        /*--------------------------------------------------------------
-        # F.A.Q Page
-        --------------------------------------------------------------*/
         .faq .basic h6 {
             font-size: 18px;
             font-weight: 600;
@@ -1096,7 +1090,7 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
-<!-- Include Bootstrap JS and jQuery -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 

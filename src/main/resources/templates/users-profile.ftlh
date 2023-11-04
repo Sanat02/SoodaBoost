@@ -10,12 +10,11 @@
     <meta content="" name="keywords">
 
 
-    <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -49,9 +48,7 @@
             font-family: "Nunito", sans-serif;
         }
 
-        /*--------------------------------------------------------------
-        # Main
-        --------------------------------------------------------------*/
+
         #main {
             margin-top: 60px;
             padding: 20px 30px;
@@ -64,9 +61,6 @@
             }
         }
 
-        /*--------------------------------------------------------------
-        # Page Title
-        --------------------------------------------------------------*/
         .pagetitle {
             margin-bottom: 10px;
         }
@@ -78,9 +72,7 @@
             color: #012970;
         }
 
-        /*--------------------------------------------------------------
-        # Back to top button
-        --------------------------------------------------------------*/
+
         .back-to-top {
             position: fixed;
             visibility: hidden;
@@ -206,9 +198,7 @@
             border-bottom: 2px solid #4154f1;
         }
 
-        /*--------------------------------------------------------------
-        # Header
-        --------------------------------------------------------------*/
+
         .logo {
             line-height: 1;
         }
@@ -475,10 +465,6 @@
             background-color: #4154f1;
         }
 
-        /*--------------------------------------------------------------
-        # Dashboard
-        --------------------------------------------------------------*/
-
 
         .dashboard .filter .dropdown-header h6 {
             text-transform: uppercase;
@@ -720,7 +706,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="/forum">
                 <i class="bi bi-bank"></i>
                 <span>Форум</span>
             </a>
@@ -789,7 +775,7 @@
                                         <button class="btn btn-primary">Окуя</button>
                                     </a>
                                     <a href="/test">
-                                    <button class="btn btn-outline-primary">Тест</button>
+                                        <button class="btn btn-outline-primary">Тест</button>
                                     </a>
                                 </div>
                             </div>
@@ -839,7 +825,7 @@
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-<!-- Include Bootstrap JS and jQuery -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 

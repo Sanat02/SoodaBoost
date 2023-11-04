@@ -6,11 +6,9 @@
     <title>Tables / General - NiceAdmin Bootstrap Template</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
-    <!-- Vendor CSS Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -900,15 +898,15 @@
                     </div>
                     <div class="tab-pane fade" id="material" role="tabpanel" aria-labelledby="material-tab">
                         <div class="container">
-                            <div class="row">
+                            <div class="row" style="margin-top: 7px">
 
                                 <#list materials as material>
                                     <div class="col-md-4">
                                         <div class="card mb-3">
                                             <div class="card-body">
-                                                <h5 class="card-title">PDF Title ${material.id}</h5>
-                                                <p class="card-text">${material.description}.</p>
-                                                <a href="/download-pdf-1" class="btn btn-primary">Download PDF</a>
+                                                <h5 class="card-title">PDF ID${material.id}</h5>
+                                                <p class="card-text" style="height: 35px">${material.description}.</p>
+                                                <a href="/download-pdf-1" class="btn btn-primary">Көчүрүү</a>
                                             </div>
                                         </div>
                                     </div>
@@ -931,7 +929,6 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
-<!-- Include Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 

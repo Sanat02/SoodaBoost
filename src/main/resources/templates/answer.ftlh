@@ -548,16 +548,16 @@
         }
 
         .custom-button {
-            background-color: white; /* Button background color */
-            border-radius: 5px; /* Add rounded corners */
-            padding: 5px 10px; /* Add some padding */
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
             cursor: pointer;
             border-color: #717ff5;
 
         }
 
         .custom-button:hover {
-            background-color: #ece6e6 /* Button background color on hover */
+            background-color: #ece6e6 ;
         }
 
 
@@ -711,7 +711,7 @@
                         </button>
                     </div>
 
-                    <!-- Bootstrap Modal -->
+
                     <div class="modal" id="notificationModal" tabindex="-1" role="dialog"
                          aria-labelledby="notificationModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">

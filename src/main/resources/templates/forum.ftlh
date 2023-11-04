@@ -495,8 +495,8 @@
             top: 10%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #4CAF50; /* Green background color */
-            color: white; /* White text color */
+            background-color: #4CAF50;
+            color: white;
             padding: 16px;
             border-radius: 5px;
             text-align: center;
@@ -726,7 +726,6 @@
                 const response = await fetch(baseUrl, {
                     method: 'POST',
                     headers: {
-                        // Use the correct Content-Type for FormData
                         'Content-Type': 'application/json',
                         [csrfHeader]: csrfToken
                     },

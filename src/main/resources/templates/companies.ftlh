@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -10,12 +9,11 @@
     <meta content="" name="keywords">
 
 
-    <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -231,8 +229,7 @@
             box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
             background-color: #fff;
             padding-left: 20px;
-            /* Toggle Sidebar Button */
-            /* Search Bar */
+
         }
 
         .header .toggle-sidebar-btn {
@@ -335,9 +332,7 @@
             background-color: #f6f9ff;
         }
 
-        /*--------------------------------------------------------------
-        # Sidebar
-        --------------------------------------------------------------*/
+
         .sidebar {
             position: fixed;
             top: 60px;
@@ -563,11 +558,6 @@
             max-width: 60px;
         }
 
-        /*--------------------------------------------------------------
-        # Icons list page
-        --------------------------------------------------------------*/
-
-
         .iconslist i {
             margin: 0.25rem;
             font-size: 2.5rem;
@@ -662,7 +652,6 @@
 <body>
 
 
-<!-- ======= Header ======= -->
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
@@ -671,7 +660,7 @@
             <span class="d-none d-lg-block">SoodaBoost</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
+    </div>
 
 
     <nav class="header-nav ms-auto">
@@ -721,7 +710,7 @@
                 <i class="bi bi-person"></i>
                 <span>Жеке баракча</span>
             </a>
-        </li><!-- End Profile Page Nav -->
+        </li>
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="/education">
@@ -742,21 +731,21 @@
                 <i class="bi bi-calculator"></i>
                 <span>Тест</span>
             </a>
-        </li><!-- End F.A.Q Page Nav -->
+        </li>
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="/consultation">
                 <i class="bi bi-question-circle"></i>
                 <span>Ишкерлер</span>
             </a>
-        </li><!-- End F.A.Q Page Nav -->
+        </li>
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="#">
                 <i class="bi bi-bar-chart-line"></i>
                 <span>Мекемелер</span>
             </a>
-        </li><!-- End F.A.Q Page Nav -->
+        </li>
 
 
         <li class="nav-item">
@@ -764,19 +753,19 @@
                 <i class="bi bi-card-list"></i>
                 <span>Катталуу</span>
             </a>
-        </li><!-- End Register Page Nav -->
+        </li>
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="/login">
                 <i class="bi bi-box-arrow-in-right"></i>
                 <span>Кирүү</span>
             </a>
-        </li><!-- End Login Page Nav -->
+        </li>
 
 
     </ul>
 
-</aside><!-- End Sidebar-->
+</aside>
 
 <main id="main" class="main">
     <div class="container">
