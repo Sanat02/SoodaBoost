@@ -595,7 +595,7 @@
                     </a>
                 </li>
                 <li style="margin-right: 6px;margin-left: 6px;">
-                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/forum/history">
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/forum/history/${user.id}">
                         <i class="bi bi-box-arrow-right"></i>
                         <span>Окуялар</span>
                     </a>
@@ -697,7 +697,7 @@
                 <div class="d-flex flex-row mb-3">
                     <img src="https://i.imgur.com/ccMhxvC.png" width="90" style="margin-right: 20px">
 
-                    <div style="height: 80px;margin-top: 30px" class="d-flex flex-column ml-2"><span>Суроо </span><span
+                    <div style="height: 80px;margin-top: 30px" class="d-flex flex-column ml-2"><span
                                 class="text-black-50"><a href="/info/${question.userId}"
                                                          style="text-decoration: none;color: #2c384e"> ${question.userName}</a></span><span
                                 class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i

@@ -694,7 +694,7 @@
                 </a>
             </li>
             <li style="margin-right: 6px;margin-left: 6px;">
-                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/forum/history">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="/forum/history/${user.id}">
                     <i class="bi bi-box-arrow-right"></i>
                     <span>Окуялар</span>
                 </a>

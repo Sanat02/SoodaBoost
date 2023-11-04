@@ -37,11 +37,10 @@ public class ForumController {
         model.addAttribute("user", user);
         return "answer";
     }
-    @GetMapping("/history")
-    public String history(Model model) {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        var user = userService.getUserByEmail(auth.getName()).orElse(null);
-        List<QuestionDto> questions=questionService.getQuestionsByUserId(user.getId());
+    @GetMapping("/history/{userId}")
+    public String history(Model model,@PathVariable int userId) {
+        List<QuestionDto> questions=questionService.getQuestionsByUserId(userId);
+        var user=userService.getUserById(userId).orElseThrow();
         model.addAttribute("user", user);
         model.addAttribute("questions", questions);
         return "history";
