@@ -599,72 +599,57 @@
             max-width: 120px;
         }
 
-
-        .contact .info-box i {
-            font-size: 38px;
-            line-height: 0;
-            color: #4154f1;
+        .main-body {
+            padding: 15px;
         }
 
-        .contact .info-box h3 {
-            font-size: 20px;
-            color: #012970;
-            font-weight: 700;
-            margin: 20px 0 10px 0;
+        .card {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
         }
 
-        .contact .info-box p {
-            padding: 0;
-            line-height: 24px;
-            font-size: 14px;
-            margin-bottom: 0;
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 0 solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
         }
 
-
-        .contact .php-email-form input,
-        .contact .php-email-form textarea {
-            border-radius: 0;
-            box-shadow: none;
-            font-size: 14px;
-            border-radius: 0;
+        .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1rem;
         }
 
-        .contact .php-email-form input:focus,
-        .contact .php-email-form textarea:focus {
-            border-color: #4154f1;
+        .gutters-sm {
+            margin-right: -8px;
+            margin-left: -8px;
         }
 
-        .contact .php-email-form input {
-            padding: 10px 15px;
+        .gutters-sm > .col, .gutters-sm > [class*=col-] {
+            padding-right: 8px;
+            padding-left: 8px;
         }
 
-        .contact .php-email-form textarea {
-            padding: 12px 15px;
+        .mb-3, .my-3 {
+            margin-bottom: 1rem !important;
         }
 
-        .contact .php-email-form button[type=submit] {
-            background: #4154f1;
-            border: 0;
-            padding: 10px 30px;
-            color: #fff;
-            transition: 0.4s;
-            border-radius: 4px;
+        .bg-gray-300 {
+            background-color: #e2e8f0;
         }
 
-        .contact .php-email-form button[type=submit]:hover {
-            background: #5969f3;
+        .h-100 {
+            height: 100% !important;
         }
 
-        @keyframes animate-loading {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+        .shadow-none {
+            box-shadow: none !important;
         }
-
     </style>
 
 </head>
@@ -786,100 +771,69 @@
 
     </div>
 
-    <section class="section profile">
-        <div class="row">
-            <div class="col-xl-4">
-                <div class="card">
-                    <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
-
-                        <i class="bi bi-person"></i>
-                        <h2>${user.fio}</h2>
-                        <h3>${user.role.role}</h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-xl-8">
-
-                <div class="card">
-                    <div class="card-body pt-3">
-                        <div class="container">
-                            <h2>Сиз тууралуу маалымат</h2>
-
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal"
-                                       role="tab" aria-controls="personal" aria-selected="true">Жеке маалымат</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                       aria-controls="contact" aria-selected="false">Толуктоо</a>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="personal" role="tabpanel"
-                                     aria-labelledby="personal-tab">
-                                    <form>
-                                        <div class="row mb-3">
-                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">
-                                                Аты-жону</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="fullName" type="text" class="form-control" id="fullName"
-                                                       value="${user.username}">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">
-                                                Email</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="fullName" type="text" class="form-control" id="fullName"
-                                                       value="${user.email}">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">
-                                                Байланый номер</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="fullName" type="text" class="form-control" id="fullName"
-                                                       value="${user.phoneNumber}">
-                                            </div>
-                                        </div>
+    <div class="container">
+        <div class="main-body">
 
 
-                                    </form>
-                                </div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    <form>
-                                        <div class="row mb-3">
-                                            <label for="email" class="col-md-4 col-lg-3 col-form-label">Email
-                                                Address</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="email" type="email" class="form-control" id="email"
-                                                       value="example@email.com">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="phone" class="col-md-4 col-lg-3 col-form-label">Phone
-                                                Number</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="phone" type="text" class="form-control" id="phone"
-                                                       value="(123) 456-7890">
-                                            </div>
-                                        </div>
-                                    </form>
+            <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png" alt="Admin"
+                                     class="rounded-circle" width="150">
+                                <div class="mt-3">
+                                    <h4>${user.fio}</h4>
+                                    <p class="text-secondary mb-1">Ишкана</p>
+                                    <a href="/forum/history/${user.id}">
+                                        <button class="btn btn-primary">Окуя</button>
+                                    </a>
+                                    <a href="/test">
+                                    <button class="btn btn-outline-primary">Тест</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Аты-жөнү</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    ${user.fio}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    ${user.email}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Phone</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    ${user.phoneNumber}
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
 
+        </div>
+    </div>
 </main>
 
 

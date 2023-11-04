@@ -748,6 +748,7 @@
             color: #fff;
             height: 40px;
         }
+
         .contact-heading {
             font-size: 24px;
             color: #333;
@@ -759,8 +760,6 @@
             color: #666;
             margin-bottom: 8px;
         }
-
-
 
 
     </style>
@@ -894,15 +893,16 @@
                 <div class="card p-3 py-4">
 
                     <div class="text-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png" width="100" class="rounded-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png" width="100"
+                             class="rounded-circle">
                     </div>
 
                     <div class="text-center mt-3">
                         <h5 class="mt-2 mb-0">${searchedUser.fio}</h5>
 
                         <div class="px-4 mt-1">
-                            <p class="fonts contact-info"><i class="fas fa-envelope"></i>  ${searchedUser.email}</p>
-                            <p class="fonts contact-info"><i class="fas fa-phone"></i>  ${searchedUser.phoneNumber}</p>
+                            <p class="fonts contact-info"><i class="fas fa-envelope"></i> ${searchedUser.email}</p>
+                            <p class="fonts contact-info"><i class="fas fa-phone"></i> ${searchedUser.phoneNumber}</p>
                         </div>
 
                         <ul class="social-list">
@@ -914,7 +914,9 @@
                         </ul>
 
                         <div class="buttons">
-                            <button class="btn btn-outline-primary px-4">Окуялар</button>
+                            <a href="/forum/history/${searchedUser.id}">
+                                <button class="btn btn-outline-primary px-4">Окуялар</button>
+                            </a>
                         </div>
 
 

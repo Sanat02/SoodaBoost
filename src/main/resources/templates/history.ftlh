@@ -657,6 +657,18 @@
         .col-md-4 {
             margin-top: 27px;
         }
+
+        .alert {
+            width: 50%;
+            margin: 20px auto;
+            padding: 30px;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 0 15px 5px #ccc;
+        }
+
+
+
     </style>
 
 
@@ -786,19 +798,27 @@
     <div class="container mt-5">
         <div class="row">
             <#list questions as question>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <div class="d-flex flex-row mb-3"><img src="https://i.imgur.com/ccMhxvC.png" width="70">
-                        <div class="d-flex flex-column ml-2"><span>Суроо </span><span class="text-black-50">${question.userName}</span><span
-                                    class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="d-flex flex-row mb-3"><img src="https://i.imgur.com/ccMhxvC.png" width="70">
+                            <div class="d-flex flex-column ml-2"><span>Суроо </span><span
+                                        class="text-black-50">${question.userName}</span><span
+                                        class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                        </div>
+                        <h6>${question.question}</h6>
+                        <div class="d-flex justify-content-between install mt-3">
+                            <span>${question.questionDate}</span><span
+                                    class="text-primary"><a href="/forum/answer/${question.id}"> Жооптор&nbsp;</a><i
+                                        class="fa fa-angle-right"></i></span></div>
                     </div>
-                    <h6>${question.question}</h6>
-                    <div class="d-flex justify-content-between install mt-3"><span>${question.questionDate}</span><span
-                                class="text-primary"><a href="/forum/answer/${question.id}"> Жооптор&nbsp;</a><i class="fa fa-angle-right"></i></span></div>
                 </div>
-            </div>
             </#list>
+            <#if questions?size == 0>
+                <div class="alert success-alert">
+                    <h3>Окуялар бош</h3>
+                </div>
+            </#if>
 
         </div>
     </div>
@@ -810,6 +830,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
 
