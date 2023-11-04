@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: 045-create-clicks-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: clicks
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: click_date
+                  type: timestamp
+              - column:
+                  name: company_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_clicks_company
+                    references: companies(id)
+              - column:
+                  name: user_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_clicks_user
+                    references: users(id)
+
+
+
+
+
+

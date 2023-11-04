@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 033-create-tests-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: tests
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_tests_user
+                    references: users(id)
+              - column:
+                  name: test_date
+                  type: timestamp
+              - column:
+                  name: score
+                  type: int
+              - column:
+                  name: passed
+                  type: varchar(255)
+
+
+
+
+
+

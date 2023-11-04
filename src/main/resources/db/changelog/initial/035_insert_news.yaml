@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 035-insert-news-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: news
+            columns:
+              - column:
+                  name: news_date
+                  value: '2023-11-01 15:09:07.026000'
+              -  column:
+                   name: title
+                   value: 'Жанылык1'
+              - column:
+                  name: description
+                  value: 'Учреждение "Служба земельных ресурсов при Министерстве сельского хозяйства Кыргызской Республики'
+        - insert:
+            tableName: news
+            columns:
+              - column:
+                  name: news_date
+                  value: '2023-11-01 15:09:07.026000'
+              - column:
+                  name: title
+                  value: 'Жанылык2'
+              - column:
+                  name: description
+                  value: 'Государственная налоговая служба при Министерстве финансов Кыргызской Республики'

@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: 029-create-company-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: companies
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: company_name
+                  type: varchar(355)
+              - column:
+                  name: description
+                  type: varchar(555)
+              - column:
+                  name: address
+                  type: varchar(255)
+              - column:
+                  name: category_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_companies_category
+                    references: categories(id)
+              - column:
+                  name: user_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_companies_user
+                    references: users(id)
+
+
+
+
+

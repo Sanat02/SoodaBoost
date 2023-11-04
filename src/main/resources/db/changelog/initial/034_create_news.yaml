@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 034-create-news-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: news
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: news_date
+                  type: timestamp
+              - column:
+                  name: title
+                  type: varchar(255)
+              - column:
+                  name: description
+                  type: varchar(555)
+
+
+
+
+
+

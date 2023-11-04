@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 036-create-videos-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: videos
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: fileName
+                  type: varchar(255)
+              - column:
+                  name: description
+                  type: varchar(255)

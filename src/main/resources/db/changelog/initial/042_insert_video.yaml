@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 042-insert-videos-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: videos
+            columns:
+              - column:
+                  name: filename
+                  value: 'v1.mp4'
+              -  column:
+                   name: description
+                   value: 'Государственные закупку в КР:Информационный ресурс'
+        - insert:
+            tableName: videos
+            columns:
+              - column:
+                  name: filename
+                  value: 'v2.mp4'
+              - column:
+                  name: description
+                  value: 'Онлайн тренинг для НКО/НПО'
+        - insert:
+            tableName: videos
+            columns:
+              - column:
+                  name: filename
+                  value: 'v3.mp4'
+              - column:
+                  name: description
+                  value: 'Гос.закупки в КР:Информационный ресурс'
+

@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 031-insert-categories-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: name
+                  value: IT
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: name
+                  value: Курулуш
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: name
+                  value: Ден-соолук
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: name
+                  value: Билим-беруу
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: name
+                  value: Транспорт
+
+
+
+
+
+

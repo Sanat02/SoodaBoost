@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 027-create-source-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: sources
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: source
+                  type: varchar(255)
+              - column:
+                  name: material_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_users_role
+                    references: materials(id)

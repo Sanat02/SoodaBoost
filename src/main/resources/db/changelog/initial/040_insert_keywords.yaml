@@ -1,0 +1,47 @@
+databaseChangeLog:
+  - changeSet:
+      id: 040-insert-keywords-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: keywords
+            columns:
+              - column:
+                  name: word
+                  value: 'Законодательство'
+        - insert:
+            tableName: keywords
+            columns:
+              - column:
+                  name: word
+                  value: 'Контракты'
+        - insert:
+            tableName: keywords
+            columns:
+              - column:
+                  name: word
+                  value: 'Аукцион'
+        - insert:
+            tableName: keywords
+            columns:
+              - column:
+                  name: word
+                  value: 'Документы'
+        - insert:
+            tableName: keywords
+            columns:
+              - column:
+                  name: word
+                  value: 'Квалификация и Сертификация'
+        - insert:
+            tableName: keywords
+            columns:
+              - column:
+                  name: word
+                  value: 'Сайт'
+        - insert:
+            tableName: keywords
+            columns:
+              - column:
+                  name: word
+                  value: 'Коррупция'

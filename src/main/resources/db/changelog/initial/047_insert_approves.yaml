@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 047-insert-approves-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: approves
+            columns:
+              - column:
+                  name: company_id
+                  value: 1
+              -  column:
+                   name: user_id
+                   value: 5
+        - insert:
+            tableName: approves
+            columns:
+              - column:
+                  name: company_id
+                  value: 1
+              - column:
+                  name: user_id
+                  value: 6
+        - insert:
+            tableName: approves
+            columns:
+              - column:
+                  name: company_id
+                  value: 1
+              - column:
+                  name: user_id
+                  value: 7

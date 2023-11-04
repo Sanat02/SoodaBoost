@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 042-insert-videos-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: materials
+            columns:
+              - column:
+                  name: filename
+                  value: 'p1.pdf'
+              -  column:
+                   name: description
+                   value: 'Государственные закупку в КР:Информационный ресурс'
+        - insert:
+            tableName: materials
+            columns:
+              - column:
+                  name: filename
+                  value: 'p1.pdf'
+              - column:
+                  name: description
+                  value: 'Онлайн тренинг для НКО/НПО'
+        - insert:
+            tableName: materials
+            columns:
+              - column:
+                  name: filename
+                  value: 'p1.pdf'
+              - column:
+                  name: description
+                  value: 'Гос.закупки в КР:Информационный ресурс'

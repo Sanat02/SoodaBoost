@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 046-create-approves-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: approves
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: company_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_approves_company
+                    references: companies(id)
+              - column:
+                  name: user_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_approves_user
+                    references: users(id)
+
+
+
+
+
+

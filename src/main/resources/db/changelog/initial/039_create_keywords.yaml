@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 039-create-keywords-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: keywords
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: word
+                  type: varchar(255)

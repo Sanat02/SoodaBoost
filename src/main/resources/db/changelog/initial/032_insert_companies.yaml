@@ -1,0 +1,106 @@
+databaseChangeLog:
+  - changeSet:
+      id: 032-insert-companies-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: company_name
+                  value: ГОС1
+              - column:
+                  name: description
+                  value: 'Кыргыз Республикасынын Билим берүү жана илим министрлиги билим берүү 
+                  жана илимий изилдөө чөйрөсүндөгү негизги орган болуп саналат. Анын миссиясы Кыргызстандын бардык жарандарына сапаттуу жана жеткиликтүү билим берүү,
+                   ошондой эле илимий изилдөөлөрдү жана инновацияларды өнүктүрүүгө көмөк көрсөтүү болуп саналат.'
+              - column:
+                  name: address
+                  value: 'Бишкек шаары,Кыргызстан'
+              - column:
+                  name: category_id
+                  value: 4
+              - column:
+                  name: user_id
+                  value: 36
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: company_name
+                  value: ГОС2
+              - column:
+                  name: description
+                  value: 'Кыргызстандын Саламаттык сактоо министрлиги: С
+                  аламаттыкты сактоо, медициналык кызмат көрсөтүү жана жарандардын ден соолук 
+                  стандарттарын сактоо үчүн жооптуу.'
+              - column:
+                  name: address
+                  value: 'Ош шаары,Кыргызстан'
+              - column:
+                  name: category_id
+                  value: 3
+              - column:
+                  name: user_id
+                  value: 37
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: company_name
+                  value: ГОС3
+              - column:
+                  name: description
+                  value: 'Биз коопсуз жана өз убагында ташыйт. Кыргызстанда жана анын чегинен
+                   тышкары профессионалдуу жүк ташуу. Сиздин логистикадагы ишенимдүү өнөктөшүңүз».'
+              - column:
+                  name: address
+                  value: 'Каракол шаары,Кыргызстан'
+              - column:
+                  name: category_id
+                  value: 5
+              - column:
+                  name: user_id
+                  value: 32
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: company_name
+                  value: ГОС4
+              - column:
+                  name: description
+                  value: 'Биз курулуш жана оңдоо боюнча адистешкен. Ар бир долбоордо 
+                  сапат жана ишенимдүүлүк. Биз сиздер менен келечекти куруп жатабыз.'
+              - column:
+                  name: address
+                  value: 'Балыкчы шаары,Кыргызстан'
+              - column:
+                  name: category_id
+                  value: 2
+              - column:
+                  name: user_id
+                  value: 33
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: company_name
+                  value: ГОС5
+              - column:
+                  name: description
+                  value: 'Инновациядагы IT лидери. Сиздин ийгилигиңиз үчүн чечимдер: 
+                  программалык камсыздоону иштеп чыгуу, киберкоопсуздук,
+                   жасалма интеллект. Эртеңки, бүгүн технологиялар.'
+              - column:
+                  name: address
+                  value: 'Бишкек шаары,Кыргызстан'
+              - column:
+                  name: category_id
+                  value: 1
+              - column:
+                  name: user_id
+                  value: 34
+
+
+

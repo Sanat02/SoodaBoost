@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 038-create-answers-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: answers
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: answer_date
+                  type: timestamp
+              - column:
+                  name: answer
+                  type: varchar(1000)
+              - column:
+                  name: question_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_answers_question
+                    references: questions(id)
+              - column:
+                  name: user_id
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_answers_user
+                    references: users(id)
+
+
+
+
+
+
