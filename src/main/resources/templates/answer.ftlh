@@ -520,6 +520,47 @@
             margin-top: 27px;
         }
 
+        .modal-content {
+            background-color: #fff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-title {
+            color: #3498db;
+        }
+
+        .btn-secondary {
+            background-color: #ccc;
+        }
+
+        .btn-secondary:hover {
+            background-color: #999;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+        }
+
+        .btn-primary:hover {
+            background-color: #1f78a7;
+        }
+
+        .custom-button {
+            background-color: white; /* Button background color */
+            border-radius: 5px; /* Add rounded corners */
+            padding: 5px 10px; /* Add some padding */
+            cursor: pointer;
+            border-color: #717ff5;
+
+        }
+
+        .custom-button:hover {
+            background-color: #ece6e6 /* Button background color on hover */
+        }
+
+
     </style>
 </head>
 
@@ -648,25 +689,63 @@
         </nav>
     </div>
 
-    <div class="container mt-5">
-        <div class="row">
+    <div class="row">
 
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <div class="d-flex flex-row mb-3"><img src="https://i.imgur.com/ccMhxvC.png" width="70">
-                        <div class="d-flex flex-column ml-2"><span>Суроо </span><span
-                                    class="text-black-50">${question.userName}</span><span
-                                    class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+        <div class="col-md-4">
+            <div class="card p-3" style="margin-left: 40px; width: 400px">
+
+                <div class="d-flex flex-row mb-3">
+                    <img src="https://i.imgur.com/ccMhxvC.png" width="90" style="margin-right: 20px">
+
+                    <div style="height: 80px;margin-top: 30px" class="d-flex flex-column ml-2"><span>Суроо </span><span
+                                class="text-black-50">${question.userName}</span><span
+                                class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i></span>
                     </div>
-                    <h6>${question.question}</h6>
-                    <div class="d-flex justify-content-between install mt-3"><span>${question.questionDate}</span><span
-                                class="text-primary"><i
-                                    class="fa fa-angle-right"></i></span></div>
-                </div>
-            </div>
 
+                    <div class="container mt-5" style="margin-left: 30px; margin-bottom:50px;">
+                        <button class="custom-button">
+                            <span class="word-click"
+                                  style="text-decoration: none; cursor: pointer; color: #717ff5;">Арыз</span>
+                        </button>
+                    </div>
+
+                    <!-- Bootstrap Modal -->
+                    <div class="modal" id="notificationModal" tabindex="-1" role="dialog"
+                         aria-labelledby="notificationModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="notificationModalLabel">Арыздануу</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Окуяга чын эле арызданасызбы?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" style="background-color: red" class="btn btn-secondary"
+                                            data-dismiss="modal">Жок
+                                    </button>
+                                    <a href="/complain/${question.id}">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Ооба</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <h6>${question.question}</h6>
+                <div class="d-flex justify-content-between install mt-3"><span>${question.questionDate}</span><span
+                            class="text-primary"><i
+                                class="fa fa-angle-right"></i></span></div>
+            </div>
         </div>
+    </div>
+
     </div>
 
     <div class="container mt-4" id="question-container">
@@ -706,6 +785,10 @@
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -810,6 +893,22 @@
         document.addEventListener('DOMContentLoaded', displayQuestions);
 
         setInterval(displayQuestions, 3000);
+
+        $(document).ready(function () {
+            $('.word-click').click(function () {
+                $('#notificationModal').modal('show');
+            });
+
+            $('#notificationModal .close').click(function () {
+                $('#notificationModal').modal('hide');
+            });
+
+            // Close the modal when the "Cancel" button is clicked
+            $('#notificationModal .btn-secondary').click(function () {
+                $('#notificationModal').modal('hide');
+            });
+
+        });
 
 
     });

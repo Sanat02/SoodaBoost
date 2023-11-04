@@ -45,3 +45,5 @@ databaseChangeLog:
       file: db/changelog/initial/046_create_approveds.yaml
   - include:
       file: db/changelog/initial/047_insert_approves.yaml
+  - include:
+      file: db/changelog/initial/048_create_complains.yaml

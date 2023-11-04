@@ -49,6 +49,7 @@ public class SecurityConfig {
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/forum/**")).hasAuthority("USER")
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/question/**")).hasAuthority("USER")
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/answer/**")).hasAuthority("USER")
+                        .requestMatchers(AntPathRequestMatcher.antMatcher("/complain/{questionId}")).hasAuthority("USER")
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/companies/{companyId}")).authenticated()
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/companies/click/{companyId}")).hasAuthority("USER")
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/profile")).authenticated()
