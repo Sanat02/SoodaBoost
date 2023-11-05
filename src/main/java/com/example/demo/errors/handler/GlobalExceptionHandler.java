@@ -36,14 +36,15 @@ public class GlobalExceptionHandler {
         return "errors/error";
     }
 
-    @ExceptionHandler(IllegalArgumentException.class)
-    private String illegalArgument(HttpServletRequest request, Model model) {
-        model.addAttribute("status", HttpStatus.BAD_REQUEST.value());
-        model.addAttribute("reason", HttpStatus.BAD_REQUEST.getReasonPhrase());
-        model.addAttribute("details", request);
-        return "errors/error";
-    }
-
+    //
+//    @ExceptionHandler(IllegalArgumentException.class)
+//    private String illegalArgument(HttpServletRequest request, Model model) {
+//        model.addAttribute("status", HttpStatus.BAD_REQUEST.value());
+//        model.addAttribute("reason", HttpStatus.BAD_REQUEST.getReasonPhrase());
+//        model.addAttribute("details", request);
+//        return "errors/error";
+//    }
+//
     @ExceptionHandler(HttpClientErrorException.BadRequest.class)
     private String badRequest(HttpServletRequest request, Model model) {
         model.addAttribute("status", HttpStatus.BAD_REQUEST.value());
@@ -92,13 +93,13 @@ public class GlobalExceptionHandler {
         return "errors/error";
     }
 
-    @ExceptionHandler(Exception.class)
-    private String otherException(HttpServletRequest request, Model model) {
-        model.addAttribute("status", HttpStatus.FORBIDDEN.value());
-        model.addAttribute("reason", HttpStatus.FORBIDDEN.getReasonPhrase());
-        model.addAttribute("details", request);
-        return "errors/error";
-    }
+//    @ExceptionHandler(Exception.class)
+//    private String otherException(HttpServletRequest request, Model model) {
+//        model.addAttribute("status", HttpStatus.FORBIDDEN.value());
+//        model.addAttribute("reason", HttpStatus.FORBIDDEN.getReasonPhrase());
+//        model.addAttribute("details", request);
+//        return "errors/error";
+//    }
 
     @ExceptionHandler(HttpClientErrorException.MethodNotAllowed.class)
     private String methodNotAllowed(HttpServletRequest request, Model model) {
@@ -108,13 +109,13 @@ public class GlobalExceptionHandler {
         return "errors/error";
     }
 
-    @ExceptionHandler(HttpServerErrorException.InternalServerError.class)
-    private String internalServerError(HttpServletRequest request, Model model) {
-        model.addAttribute("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
-        model.addAttribute("reason", HttpStatus.INTERNAL_SERVER_ERROR.getReasonPhrase());
-        model.addAttribute("details", request);
-        return "errors/error";
-    }
+//    @ExceptionHandler(HttpServerErrorException.InternalServerError.class)
+//    private String internalServerError(HttpServletRequest request, Model model) {
+//        model.addAttribute("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
+//        model.addAttribute("reason", HttpStatus.INTERNAL_SERVER_ERROR.getReasonPhrase());
+//        model.addAttribute("details", request);
+//        return "errors/error";
+//    }
 
     @ExceptionHandler(HttpClientErrorException.UnsupportedMediaType.class)
     private String unsupportedMediaType(HttpServletRequest request, Model model) {
