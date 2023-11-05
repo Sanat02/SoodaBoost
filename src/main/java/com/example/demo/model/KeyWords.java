@@ -15,7 +15,7 @@ import java.util.List;
 public class KeyWords {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  int id;
+    private int id;
 
 
     private String word;

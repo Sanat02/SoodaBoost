@@ -18,13 +18,14 @@ public class EducationController {
     private final VideoService videoService;
     private final UserRepository userRepository;
     private final MaterialService materialService;
+
     @GetMapping
     public String education(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         var user = userRepository.findUserByEmail(auth.getName()).orElse(null);
         model.addAttribute("user", user);
-        model.addAttribute("videos",videoService.getAllVideos());
-        model.addAttribute("materials",materialService.getAllMaterials());
+        model.addAttribute("videos", videoService.getAllVideos());
+        model.addAttribute("materials", materialService.getAllMaterials());
         return "education";
     }
 }

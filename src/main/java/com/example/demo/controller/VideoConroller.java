@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import org.springframework.core.io.ClassPathResource;
+
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
@@ -15,7 +15,7 @@ import java.io.IOException;
 public class VideoConroller {
     @GetMapping("/video/{filename}")
     public ResponseEntity<byte[]> getVideo(@PathVariable String filename) throws IOException {
-        Resource videoResource = new FileSystemResource("C:/Users/User/Downloads/GOS-main/GOS-main/data/videos/"+filename);
+        Resource videoResource = new FileSystemResource("C:/Users/User/Downloads/GOS-main/GOS-main/data/videos/" + filename);
 
         byte[] videoBytes = videoResource.getInputStream().readAllBytes();
 

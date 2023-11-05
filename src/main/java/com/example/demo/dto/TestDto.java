@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 @Data
 @Builder
 public class TestDto {
-    private  int id;
+    private int id;
     private String username;
     private int userId;
     private Timestamp testDate;

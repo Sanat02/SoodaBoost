@@ -21,6 +21,7 @@ import java.util.List;
 public class ForumController {
     private final UserService userService;
     private final QuestionService questionService;
+
     @GetMapping
     public String forum(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
@@ -33,14 +34,15 @@ public class ForumController {
     public String answer(Model model, @PathVariable int questionId) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         var user = userService.getUserByEmail(auth.getName()).orElse(null);
-        model.addAttribute("question",questionService.getQuestionById(questionId));
+        model.addAttribute("question", questionService.getQuestionById(questionId));
         model.addAttribute("user", user);
         return "answer";
     }
+
     @GetMapping("/history/{userId}")
-    public String history(Model model,@PathVariable int userId) {
-        List<QuestionDto> questions=questionService.getQuestionsByUserId(userId);
-        var user=userService.getUserById(userId).orElseThrow();
+    public String history(Model model, @PathVariable int userId) {
+        List<QuestionDto> questions = questionService.getQuestionsByUserId(userId);
+        var user = userService.getUserById(userId).orElseThrow();
         model.addAttribute("user", user);
         model.addAttribute("questions", questions);
         return "history";

@@ -13,7 +13,7 @@ import lombok.*;
 public class Approves {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  int id;
+    private int id;
     private int userId;
     private int companyId;
 }

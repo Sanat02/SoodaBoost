@@ -25,7 +25,7 @@ public class UserService {
         return mayBeUser;
     }
 
-    public int getAllUsersSize(int roleId){
+    public int getAllUsersSize(int roleId) {
         return userRepository.findUserByRoleId(roleId).size();
     }
 
@@ -35,7 +35,7 @@ public class UserService {
     }
 
 
-    public int save(UserDto userDto,int role) {
+    public int save(UserDto userDto, int role) {
 
         return userRepository.save(User.builder()
                 .fio(userDto.getFio())

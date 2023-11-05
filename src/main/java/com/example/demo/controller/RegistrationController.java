@@ -38,7 +38,7 @@ public class RegistrationController {
                 .email(email)
                 .phoneNumber(phoneNumber)
                 .build();
-        userService.save(userDto,role);
+        userService.save(userDto, role);
         return "redirect:/login";
 
     }

@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.dto.TestDto;
-import com.example.demo.dto.UserDto;
 import com.example.demo.service.TestService;
 import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;

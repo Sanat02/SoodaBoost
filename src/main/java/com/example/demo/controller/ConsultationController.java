@@ -19,10 +19,11 @@ import java.util.List;
 public class ConsultationController {
     private final TestService testService;
     private final UserRepository userRepository;
+
     @GetMapping
     public String consult(Model model) {
-        List<TestDto> tests=testService.getAllTests();
-        model.addAttribute("tests",tests);
+        List<TestDto> tests = testService.getAllTests();
+        model.addAttribute("tests", tests);
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         var user = userRepository.findUserByEmail(auth.getName()).orElse(null);
         model.addAttribute("user", user);

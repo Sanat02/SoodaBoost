@@ -15,7 +15,7 @@ import java.sql.Timestamp;
 public class Test {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  int id;
+    private int id;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
@@ -24,8 +24,6 @@ public class Test {
     private Timestamp testDate;
     private int score;
     private String passed;
-
-
 
 
 }

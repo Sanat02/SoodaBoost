@@ -22,9 +22,9 @@ public class UserInfoController {
     public String info(Model model, @PathVariable int userId) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         var user = userService.getUserByEmail(auth.getName()).orElse(null);
-        model.addAttribute("user",user);
-        UserDto searchedUser=userService.mapToUserDto(userService.getUserById(userId).orElseThrow());
-        model.addAttribute("searchedUser",searchedUser);
+        model.addAttribute("user", user);
+        UserDto searchedUser = userService.mapToUserDto(userService.getUserById(userId).orElseThrow());
+        model.addAttribute("searchedUser", searchedUser);
         return "user-info";
     }
 }

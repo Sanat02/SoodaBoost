@@ -1,11 +1,9 @@
 package com.example.demo.controllerRest;
 
-import com.example.demo.dto.QDto;
+
 import com.example.demo.dto.QuestionDto;
-import com.example.demo.dto.UserDto;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.service.QuestionService;
-import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;

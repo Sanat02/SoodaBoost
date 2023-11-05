@@ -19,7 +19,7 @@ public class ProfileController {
     public String home(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         var user = userService.getUserByEmail(auth.getName()).orElse(null);
-        model.addAttribute("user",user);
+        model.addAttribute("user", user);
         return "users-profile";
     }
 }

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class RoleService {
     private final RoleRepository roleRepository;
 
-    public Role getRoleById(long id){
+    public Role getRoleById(long id) {
         return roleRepository.findById((int) id).get();
     }
 }
