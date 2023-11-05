@@ -9,9 +9,9 @@ databaseChangeLog:
               - column:
                   name: news_date
                   value: '2023-11-01 15:09:07.026000'
-              -  column:
-                   name: title
-                   value: 'Жанылык1'
+              - column:
+                  name: title
+                  value: 'Жанылык1'
               - column:
                   name: description
                   value: 'Учреждение "Служба земельных ресурсов при Министерстве сельского хозяйства Кыргызской Республики'

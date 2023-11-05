@@ -9,9 +9,9 @@ databaseChangeLog:
               - column:
                   name: filename
                   value: 'v1.mp4'
-              -  column:
-                   name: description
-                   value: 'Государственные закупку в КР:Информационный ресурс'
+              - column:
+                  name: description
+                  value: 'Государственные закупку в КР:Информационный ресурс'
         - insert:
             tableName: videos
             columns:

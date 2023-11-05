@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 050-insert-questionsKey-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: questionskey
+            columns:
+              - column:
+                  name: question_id
+                  value: 1
+              - column:
+                  name: key_id
+                  value: 6
+        - insert:
+            tableName: questionskey
+            columns:
+              - column:
+                  name: question_id
+                  value: 2
+              - column:
+                  name: key_id
+                  value: 2
+        - insert:
+            tableName: questionskey
+            columns:
+              - column:
+                  name: question_id
+                  value: 3
+              - column:
+                  name: key_id
+                  value: 5

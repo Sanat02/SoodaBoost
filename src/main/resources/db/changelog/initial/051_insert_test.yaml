@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 051-insert-test-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: tests
+            columns:
+              - column:
+                  name: user_id
+                  value: 5
+              - column:
+                  name: test_date
+                  value: '2023-11-01 15:09:07.026000'
+              - column:
+                  name: score
+                  value: 5
+              - column:
+                  name: passed
+                  value: 'Passed'
+        - insert:
+            tableName: tests
+            columns:
+              - column:
+                  name: user_id
+                  value: 6
+              - column:
+                  name: test_date
+                  value: '2023-11-01 15:09:07.026000'
+              - column:
+                  name: score
+                  value: 3
+              - column:
+                  name: passed
+                  value: 'Failure'

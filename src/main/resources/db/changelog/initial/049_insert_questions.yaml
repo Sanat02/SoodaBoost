@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 049-insert-questions-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: question_date
+                  value: '2023-11-01 15:09:07.026000'
+              - column:
+                  name: question
+                  value: 'Как зарегестрироваться на сайте госзакупок?'
+              - column:
+                  name: user_id
+                  value: 5
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: question_date
+                  value: '2023-11-02 15:09:07.026000'
+              - column:
+                  name: question
+                  value: 'Кто подавал на тендер?'
+              - column:
+                  name: user_id
+                  value: 5
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: question_date
+                  value: '2023-11-02 15:09:07.026000'
+              - column:
+                  name: question
+                  value: 'Где можно повысить квалификацию?'
+              - column:
+                  name: user_id
+                  value: 6
