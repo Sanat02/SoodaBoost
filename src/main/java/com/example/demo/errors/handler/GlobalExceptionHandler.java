@@ -27,6 +27,7 @@ public class GlobalExceptionHandler {
         model.addAttribute("details", request.getRequestURI());
         return "errors/error";
     }
+
     @ExceptionHandler(HttpClientErrorException.NotFound.class)
     private String notFound(HttpServletRequest request, Model model) {
         model.addAttribute("status", HttpStatus.NOT_FOUND.value());
@@ -50,6 +51,7 @@ public class GlobalExceptionHandler {
         model.addAttribute("details", request);
         return "errors/error";
     }
+
     @ExceptionHandler(NoSuchElementException.class)
     private String noSuchElement(HttpServletRequest request, Model model) {
         model.addAttribute("status", HttpStatus.BAD_REQUEST.value());
@@ -57,6 +59,7 @@ public class GlobalExceptionHandler {
         model.addAttribute("details", request);
         return "errors/error";
     }
+
     @ExceptionHandler(HttpClientErrorException.Unauthorized.class)
     private String unauthorized(HttpServletRequest request, Model model) {
         model.addAttribute("status", HttpStatus.UNAUTHORIZED.value());
@@ -120,6 +123,7 @@ public class GlobalExceptionHandler {
         model.addAttribute("details", request);
         return "errors/error";
     }
+
     @ExceptionHandler(UsernameNotFoundException.class)
     private String handleUsernameNotFoundException(HttpServletRequest request, Model model, UsernameNotFoundException ex) {
         model.addAttribute("status", HttpStatus.NOT_FOUND.value());
